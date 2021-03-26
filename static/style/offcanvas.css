@@ -1,7 +1,30 @@
 .container {
+
     background-color: antiquewhite;;
 }
 
+.detailed {
+    height: 500px;
+}
+
+
 .row {
     padding: 10px;
+}
+
+.artist-card {
+    border: black 2px solid;
+    text-align: center;
+}
+
+.nft-price {
+    margin-left: 25px;
+}
+
+.nft-title {
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 100px;
+    font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+    font-size: 40px;
 }

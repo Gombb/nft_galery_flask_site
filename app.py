@@ -16,8 +16,8 @@ def route_discover():
 
 @app.route("/detailed/<image_id>")
 def detailed_view(image_id):
-
-    return render_template("detailed.html")
+    nft_card = nft_cards.get_nft_by_id(image_id)
+    return render_template("detailed.html", nft_card=nft_card)
 
 if __name__ == '__main__':
     app.run()
