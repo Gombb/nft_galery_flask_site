@@ -5,7 +5,7 @@
             {% for nft in nfts %}
                 <div class="col">
                     <div class="nft card">
-                        <a href={{ url_for("detailed_view", image_id=nft.id )}}>
+                        <a href={{ url_for("detailed_image_view", image_id=nft.id )}}>
                             <img src={{ nft.img_link }} class="img-fluid" alt="...">
                         </a>
                     </div>

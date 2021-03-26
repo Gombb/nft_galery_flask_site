@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="container" id="detailed-container">
+        <div class="row" id="detailed-row">
+            <div class="col">
+                <div class="nft-title">
+                    {{ nft_card.title }}
+                </div>
+                <div class="nft-price">
+                    {{ nft_card.price }}
+                </div>
+            </div>
+            <div class="col">
+                <div class="artist-card">
+                    {{ nft_card.artist.name }}
+                </div>
+            </div>
+        </div>
+        <div class = row>
+            <div class="col">
+                <img class="img-thumbnail" alt="example" src={{ nft_card.img_link }}>
+            </div>
+        </div>
+    </div>
+{% endblock %}
