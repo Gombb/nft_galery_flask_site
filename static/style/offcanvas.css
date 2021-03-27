@@ -33,3 +33,13 @@
     font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
     font-size: 40px;
 }
+
+.nft-title-thumbnail {
+
+}
+a:-webkit-any-link {
+    color: black;
+    cursor: pointer;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}
