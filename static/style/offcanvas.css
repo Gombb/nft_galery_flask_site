@@ -26,6 +26,11 @@
     box-shadow: 7px 7px 6px #888888;
 }
 
+.artist-card-thumbnail{
+    alignment: center;
+
+}
+
 .collectible-card-infoContainer {
     padding: 5px;
 }
@@ -60,4 +65,5 @@ a:-webkit-any-link {
     cursor: pointer;
     text-decoration-style: initial;
     text-decoration-color: initial;
+    text-decoration: none;
 }
