@@ -35,6 +35,11 @@
     padding: 5px;
 }
 
+.label-thumbnail {
+    font-size: 12px;
+
+}
+
 .image-thumbnail {
     padding: 1px;
 }
