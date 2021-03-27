@@ -1,6 +1,4 @@
 .container {
-
-    background-color: antiquewhite;;
 }
 
 .detailed {
@@ -14,12 +12,26 @@
 
 
 .row {
-    padding: 10px;
+    margin: 5px;
 }
 
 .artist-card {
     border: black 2px solid;
     text-align: center;
+}
+
+.collectible-card {
+    border: black 1px solid;
+    margin-bottom: 25px;
+    box-shadow: 7px 7px 6px #888888;
+}
+
+.collectible-card-infoContainer {
+    padding: 5px;
+}
+
+.image-thumbnail {
+    padding: 1px;
 }
 
 .nft-price {
@@ -34,9 +46,15 @@
     font-size: 40px;
 }
 
-.nft-title-thumbnail {
+.nft-price-thumbnail{
+    alignment: right;
 
 }
+
+.nft-title-thumbnail {
+    font-size: larger;
+}
+
 a:-webkit-any-link {
     color: black;
     cursor: pointer;

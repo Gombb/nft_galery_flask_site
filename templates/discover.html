@@ -6,13 +6,42 @@
                 {% for nft in nfts %}
                      <div class="col-md-3">
                             <div class="collectible-card">
-                                <div class="nft thumbnail">
+                                <div class="image-thumbnail">
                                     <a href={{ url_for("detailed_image_view", image_id=nft.id )}}>
-                                        <img class="img-thumbnail image-resize" src={{ nft.img_link }} alt="thumbnail-img">
+                                        <img class="img-fluid image-resize" src={{ nft.img_link }} alt="thumbnail-img">
                                     </a>
                                 </div>
-                                <div class="collectible-card info_container">
-
+                                <div class="collectible-card-infoContainer">
+                                    <div class="row">
+                                        <div class="col">
+                                            <a href={{ url_for("detailed_image_view", image_id=nft.id )}}>
+                                                <span class="nft-title-thumbnail">{{ nft.title }}</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <span class="nft-price-thumbnail">{{ nft.price }}Ξ</span>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <span class="nft-price-thumbnail">{{ nft.price }}Ξ</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <span class="nft-listPrice-label-thumbnail">List price</span>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <span class="nft-lastPrice-label-thumbnail">Last bid</span>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="border-top: black 1px solid">
+                                        <div class="col">
+                                            <a href={{ url_for("detailed_artist_view", artist_id=nft.artist.id) }}>
+                                                <span class="artist-card-thumbnail">{{ nft.artist.name }}</span>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

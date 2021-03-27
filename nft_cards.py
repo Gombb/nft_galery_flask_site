@@ -8,7 +8,8 @@ class Nft:
 
 
 class Artist:
-    def __init__(self, name, age):
+    def __init__(self, id, name, age):
+        self.id = id
         self.name = name
         self.age = age
 
@@ -18,8 +19,8 @@ img_link_2 = "https://storage.googleapis.com/gweb-uniblog-publish-prod/original_
 img_link_3 = "https://craftinga.com/wp-content/uploads/2020/11/Trump-Witch.jpg"
 
 
-artist_1 = Artist("Mr.M", 42)
-artist_2 = Artist("Mr.D", 25)
+artist_1 = Artist(1, "Mr.M", 42)
+artist_2 = Artist(2, "Mr.D", 25)
 artist_dict = {artist_1.name: artist_1, artist_2.name: artist_2}
 nft_list = [Nft(1, "Neutrogena", artist_dict["Mr.D"],  0.555, img_link_1), Nft(2, "Losange", artist_dict["Mr.M"], 1.555, img_link_2),
             Nft(3, "LaKőr", artist_dict["Mr.M"], 520.21, img_link_3), Nft(1, "Neutrogena", artist_dict["Mr.D"],  0.555, img_link_1), Nft(2, "Losange", artist_dict["Mr.M"], 1.555, img_link_2),
