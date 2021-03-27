@@ -1,19 +1,23 @@
 {% extends "layout.html" %}
 {% block content %}
-    <div class="container">
-        <div class="row">
-            {% for nft in nfts %}
-                <div class="col">
-                    <div class="nft card">
-                        <a href={{ url_for("detailed_image_view", image_id=nft.id )}}>
-                            <img src={{ nft.img_link }} class="img-fluid" alt="...">
-                        </a>
-                    </div>
-                </div>
-            {% endfor %}
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                {% for nft in nfts %}
+                     <div class="col-md-3">
+                            <div class="collectible-card">
+                                <div class="nft thumbnail">
+                                    <a href={{ url_for("detailed_image_view", image_id=nft.id )}}>
+                                        <img class="img-thumbnail image-resize" src={{ nft.img_link }} alt="thumbnail-img">
+                                    </a>
+                                </div>
+                                <div class="collectible-card info_container">
+
+                                </div>
+                            </div>
+                        </div>
+                {% endfor %}
+            </div>
         </div>
-
     </div>
-
-
 {% endblock %}

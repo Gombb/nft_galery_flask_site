@@ -7,6 +7,11 @@
     height: 500px;
 }
 
+.image-resize {
+    width: 352px;
+    height: 352px;
+}
+
 
 .row {
     padding: 10px;

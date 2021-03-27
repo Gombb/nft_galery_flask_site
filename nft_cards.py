@@ -1,5 +1,5 @@
 class Nft:
-    def __init__(self, id, title, artist, price, img_link = "https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/image-bgEuwDxel93-Pg-large_1.png"):
+    def __init__(self, id, title, artist, price, img_link):
         self.id = id
         self.title = title
         self.artist = artist
@@ -13,11 +13,20 @@ class Artist:
         self.age = age
 
 
+img_link_1 = "https://i.pinimg.com/564x/1d/9b/57/1d9b5704645fcecb8d514fd8f798c136.jpg"
+img_link_2 = "https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/image-bgEuwDxel93-Pg-large_1.png"
+img_link_3 = "https://craftinga.com/wp-content/uploads/2020/11/Trump-Witch.jpg"
+
+
 artist_1 = Artist("Mr.M", 42)
 artist_2 = Artist("Mr.D", 25)
 artist_dict = {artist_1.name: artist_1, artist_2.name: artist_2}
-nft_list = [Nft(1, "Neutrogena", artist_dict["Mr.D"],  0.555), Nft(2, "Losange", artist_dict["Mr.M"], 1.555),
-            Nft(3, "LaKőr", artist_dict["Mr.M"], 520.21)]
+nft_list = [Nft(1, "Neutrogena", artist_dict["Mr.D"],  0.555, img_link_1), Nft(2, "Losange", artist_dict["Mr.M"], 1.555, img_link_2),
+            Nft(3, "LaKőr", artist_dict["Mr.M"], 520.21, img_link_3), Nft(1, "Neutrogena", artist_dict["Mr.D"],  0.555, img_link_1), Nft(2, "Losange", artist_dict["Mr.M"], 1.555, img_link_2),
+            Nft(3, "LaKőr", artist_dict["Mr.M"], 520.21, img_link_3), Nft(1, "Neutrogena", artist_dict["Mr.D"],  0.555, img_link_1), Nft(2, "Losange", artist_dict["Mr.M"], 1.555, img_link_2),
+            Nft(3, "LaKőr", artist_dict["Mr.M"], 520.21, img_link_3), Nft(1, "Neutrogena", artist_dict["Mr.D"],  0.555, img_link_1), Nft(2, "Losange", artist_dict["Mr.M"], 1.555, img_link_2),
+            Nft(3, "LaKőr", artist_dict["Mr.M"], 520.21, img_link_3), Nft(1, "Neutrogena", artist_dict["Mr.D"],  0.555, img_link_1), Nft(2, "Losange", artist_dict["Mr.M"], 1.555, img_link_2),
+            Nft(3, "LaKőr", artist_dict["Mr.M"], 520.21, img_link_3)]
 
 
 def init_nft():
