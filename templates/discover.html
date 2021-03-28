@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 {% for nft in nfts %}
-                     <div class="col-md-3">
+                     <div class="col-xl-3 col-sm-6 col-12">
                             <div class="collectible-card">
                                 <div class="image-thumbnail">
                                     <a href={{ url_for("detailed_image_view", image_id=nft.id )}}>
@@ -13,7 +13,7 @@
                                 </div>
                                 <div class="collectible-card-infoContainer">
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-md-6">
                                             <a href={{ url_for("detailed_image_view", image_id=nft.id )}}>
                                                 <span class="nft-title-thumbnail">{{ nft.title }}</span>
                                             </a>
