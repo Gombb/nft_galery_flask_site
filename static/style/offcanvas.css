@@ -1,8 +1,5 @@
 .container {
-}
 
-.detailed {
-    height: 500px;
 }
 
 .image-resize {
@@ -10,20 +7,39 @@
     height: 352px;
 }
 
-
 .row {
     margin: 5px;
 }
 
-.artist-card {
-    border: black 2px solid;
+.artist-card.detailed {
+    border: black 1px solid;
     text-align: center;
+    margin-top: 25px;
+    border-radius: 50px;
 }
 
 .collectible-card {
     border: black 1px solid;
     margin-bottom: 25px;
     box-shadow: 7px 7px 6px #888888;
+}
+
+.image-detailed  {
+    box-shadow: 10px 10px 8px #888888;
+    margin-top: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 705px;
+}
+
+.detailed-infoBox {
+    margin-top: 25px;;
+
+}
+
+.description {
+    font-size: smaller;
 }
 
 .artist-card-thumbnail{
@@ -35,30 +51,38 @@
     padding: 5px;
 }
 
-.label-thumbnail {
+.label {
     font-size: 12px;
-
 }
+
 
 .image-thumbnail {
     padding: 1px;
 }
 
 .nft-price {
-    margin-left: 25px;
+    text-align: right;
+    color: darkgreen;
+    font-size: 18px;
 }
 
 .nft-title {
-    margin-top: 25px;
-    margin-left: 25px;
-    margin-bottom: 100px;
+    margin-bottom: 15px;
     font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
     font-size: 40px;
 }
 
-.nft-price-thumbnail{
-    alignment: right;
 
+.row.priceTag {
+    padding-top: 5px;
+    border-top: black 1px solid;
+    text-align: center;
+}
+
+.row.priceLabel {
+    padding-bottom: 5px;
+    border-bottom: black 1px solid;
+    text-align: center;
 }
 
 .nft-title-thumbnail {
