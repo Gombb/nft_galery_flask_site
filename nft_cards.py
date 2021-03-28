@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*- 
+
 class Nft:
     def __init__(self, id, title, artist, price, img_link):
         self.id = id
@@ -31,6 +34,7 @@ for i in range(10):
     nft_list.append(nft_1)
     nft_list.append(nft_2)
     nft_list.append(nft_3)
+
 
 
 def init_nft():
