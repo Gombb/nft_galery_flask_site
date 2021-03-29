@@ -8,7 +8,7 @@ def route_index():
     return render_template("index.html")
 
 
-@app.route("/detailed/artist/artist<artist_id>")
+@app.route("/detailed/artist/<artist_id>")
 def detailed_artist_view(artist_id):
     return render_template("artist_detailed.html")
 
