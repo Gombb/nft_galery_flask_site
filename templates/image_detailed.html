@@ -1,21 +1,50 @@
 {% extends "layout.html" %}
 {% block content %}
     <div class="container" id="detailed-container">
-        <div class="row" id="detailed-row">
-            <div class="col-8">
-                <img class="img-thumbnail" alt="example" src={{ nft_card.img_link }}>
+        <div class="row" id="detailed-row" style="align-content: center">
+            <div class="col-sm-12 col-xl-8">
+                <img class="img-fluid image-detailed" alt="example" src={{ nft_card.img_link }}>
             </div>
-            <div class="col-4">
-                <div class="nft-title">
-                    {{ nft_card.title }}
-                </div>
-                <div class="nft-price">
-                    {{ nft_card.price }} Ξ
-                </div>
-                <div class="artist-card">
-                    {{ nft_card.artist.name }}
+            <div class="col-sm-12 col-xl-4">
+                <div class="detailed-infoBox">
+                    <div class="row">
+                        <div class="col">
+                            <div class="nft-title">
+                                {{ nft_card.title }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="description">{{ nft_card.description }}</span>
+                        </div>
+                    </div>
+                    <div class="row priceTag">
+                        <div class="col-md-6">
+                            <span class="nft-price">{{ nft_card.price }}Ξ</span>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="nft-price">{{ nft_card.price }}Ξ</span>
+                        </div>
+                    </div>
+                    <div class="row priceLabel">
+                        <div class="col-md-6">
+                            <span class="label detailed">List price</span>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="label detailed">Last price</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="artist-card detailed">
+                                {{ nft_card.artist.name }}
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 {% endblock %}
+
