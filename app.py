@@ -1,5 +1,5 @@
 from flask import *
-import nft_cards
+import product_service
 app = Flask(__name__)
 
 
@@ -15,14 +15,14 @@ def detailed_artist_view(artist_id):
 
 @app.route("/discover")
 def route_discover():
-    nfts = nft_cards.get_nft_list()
-    return render_template("discover.html", nfts=nfts)
+    products = product_service.get_nft_list()
+    return render_template("discover.html", nfts=products)
 
 
 @app.route("/detailed/image/<image_id>")
 def detailed_image_view(image_id):
-    nft_card = nft_cards.get_nft_by_id(image_id)
-    return render_template("image_detailed.html", nft_card=nft_card)
+    product_card = product_service.get_nft_by_id(image_id)
+    return render_template("image_detailed.html", nft_card=product_card)
 
 
 if __name__ == '__main__':
