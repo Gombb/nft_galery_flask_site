@@ -1,10 +1,26 @@
 {% extends "layout.html" %}
 {% block content %}
-    <div class="container">
-        <div class="row">
-            <div class="col">
-
+    <div class="container artist" id="detailed-container">
+        <div class="row" id="detailed-row">
+            <div class="col-4">
+                <img class="img-thumbnail" alt="example" src={{ artist.avatar }}>
             </div>
+            <div class="col-8">
+                <div class="artist-name">
+                    {{ artist.name }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container artist-products">
+        <div class="row">
+            {% for product in products %}
+                <div class="col-2">
+                    <a href={{ url_for("detailed_image_view", product_id=product.id) }}>
+                        <img class="img-fluid product-image artist-detailed" src={{ product.img_link }}>
+                    </a>
+                </div>
+            {% endfor %}
         </div>
     </div>
 {% endblock %}

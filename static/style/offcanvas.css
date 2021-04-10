@@ -1,4 +1,7 @@
-.container {
+.container.artist-products {
+    border: solid 2px grey;
+    margin-top: 200px;
+
 }
 
 .detailed {
@@ -10,6 +13,13 @@
     height: 352px;
 }
 
+
+.product-image.artist-detailed {
+    width: 174px;
+    height: 174px;
+    margin: 25px;
+
+}
 
 .row {
     margin: 5px;

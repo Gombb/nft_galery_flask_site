@@ -7,14 +7,14 @@
                      <div class="col-md-3">
                             <div class="collectible-card">
                                 <div class="image-thumbnail">
-                                    <a href={{ url_for("detailed_image_view", image_id=nft.id )}}>
+                                    <a href={{ url_for("detailed_image_view", product_id=nft.id )}}>
                                         <img class="img-fluid image-resize" src={{ nft.img_link }} alt="thumbnail-img">
                                     </a>
                                 </div>
                                 <div class="collectible-card-infoContainer">
                                     <div class="row">
                                         <div class="col">
-                                            <a href={{ url_for("detailed_image_view", image_id=nft.id )}}>
+                                            <a href={{ url_for("detailed_image_view", product_id=nft.id )}}>
                                                 <span class="nft-title-thumbnail">{{ nft.title }}</span>
                                             </a>
                                         </div>
