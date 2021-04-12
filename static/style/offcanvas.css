@@ -1,10 +1,23 @@
-.container {
+
+.container.artist-products {
+    border: solid 2px grey;
+    margin-top: 200px;
 
 }
+
+
 
 .image-resize {
     width: 352px;
     height: 352px;
+}
+
+
+.product-image.artist-detailed {
+    width: 174px;
+    height: 174px;
+    margin: 25px;
+
 }
 
 .row {
@@ -60,13 +73,13 @@
     padding: 1px;
 }
 
-.nft-price {
+.product-price {
     text-align: right;
     color: darkgreen;
     font-size: 18px;
 }
 
-.nft-title {
+.product-title {
     margin-bottom: 15px;
     font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
     font-size: 40px;
@@ -85,7 +98,7 @@
     text-align: center;
 }
 
-.nft-title-thumbnail {
+.product-title-thumbnail {
     font-size: larger;
 }
 
