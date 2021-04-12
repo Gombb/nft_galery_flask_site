@@ -3,28 +3,28 @@
     <div class="container" id="detailed-container">
         <div class="row" id="detailed-row" style="align-content: center">
             <div class="col-sm-12 col-xl-8">
-                <img class="img-fluid image-detailed" alt="example" src={{ nft_card.img_link }}>
+                <img class="img-fluid image-detailed" alt="example" src={{ product.img_link }}>
             </div>
             <div class="col-sm-12 col-xl-4">
                 <div class="detailed-infoBox">
                     <div class="row">
                         <div class="col">
-                            <div class="nft-title">
-                                {{ nft_card.title }}
+                            <div class="product-title">
+                                {{ product.title }}
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            <span class="description">{{ nft_card.description }}</span>
+                            <span class="description">{{ product.description }}</span>
                         </div>
                     </div>
                     <div class="row priceTag">
                         <div class="col-md-6">
-                            <span class="nft-price">{{ nft_card.price }}Ξ</span>
+                            <span class="product-price">{{ product.price }}Ξ</span>
                         </div>
                         <div class="col-md-6">
-                            <span class="nft-price">{{ nft_card.price }}Ξ</span>
+                            <span class="product-price">{{ product.price }}Ξ</span>
                         </div>
                     </div>
                     <div class="row priceLabel">
@@ -38,7 +38,7 @@
                     <div class="row">
                         <div class="col">
                             <div class="artist-card detailed">
-                                {{ nft_card.artist.name }}
+                                {{ product.artist.name }}
                             </div>
                         </div>
                     </div>
