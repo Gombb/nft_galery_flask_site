@@ -1,4 +1,20 @@
 
+.container.about {
+    margin-top: 25px;
+    padding-top: 5px;
+    border-top: black 1px solid;
+    text-align: center;
+}
+
+.about-title {
+    font-size: 35px;
+    margin: 15px;
+}
+
+.about-text {
+    font-size: 17px;
+}
+
 .container.artist-products {
     margin-top: 200px;
     padding: 0;
