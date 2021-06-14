@@ -32,9 +32,20 @@
 
 }
 
+
+#lastProductsCarousel {
+    width: 750px;
+    height: 750px;
+}
+
 .col-2.artist-products {
     padding: 0;
 
+}
+
+.carousel-img-size {
+    width: 750px;
+    height: 750px;
 }
 
 .image-resize {
