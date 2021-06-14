@@ -38,7 +38,9 @@
                     <div class="row">
                         <div class="col">
                             <div class="artist-card detailed">
-                                {{ product.artist.name }}
+                                <a href={{ url_for("detailed_artist_view", artist_id=product.artist.id) }}>
+                                    <span class="artist-card-thumbnail">{{ product.artist.name }}</span>
+                                </a>
                             </div>
                         </div>
                     </div>

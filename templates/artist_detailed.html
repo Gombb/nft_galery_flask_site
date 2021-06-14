@@ -5,9 +5,22 @@
             <div class="col-4">
                 <img class="img-thumbnail" alt="example" src={{ artist.avatar }}>
             </div>
-            <div class="col-8">
-                <div class="artist-name">
-                    {{ artist.name }}
+            <div class="col-8" id="artist-bio">
+                <div class="artist-detailed-card">
+                    <div class="row">
+                        <div class="col">
+                            <div class="artist-name" id="artist-name-detailed">
+                                {{ artist.name }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="artist-bio">
+                                {{ artist.bio  }}
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -15,7 +28,7 @@
     <div class="container artist-products">
         <div class="row">
             {% for product in product_list %}
-                <div class="col-2">
+                <div class="col-2 artist-products">
                     <a href={{ url_for("detailed_image_view", product_id=product.id) }}>
                         <img class="img-fluid product-image artist-detailed" src={{ product.img_link }}>
                     </a>
