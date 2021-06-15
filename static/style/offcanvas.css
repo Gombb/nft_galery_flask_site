@@ -53,12 +53,15 @@
     height: 352px;
 }
 
+.modal-content-image {
+    width: 200%;
+    height: 200%;
+}
 
 .product-image.artist-detailed {
     width: 174px;
     height: 174px;
     margin: 25px;
-
 }
 
 .row {
