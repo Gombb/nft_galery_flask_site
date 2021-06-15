@@ -56,18 +56,18 @@ lorem_ipsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e
 artist_1 = Artist(1, "Mr.M", 42, avatar_1, lorem_ipsum)
 artist_2 = Artist(2, "Mr.D", 25, avatar_1, lorem_ipsum)
 artist_dict = {artist_1.name: artist_1, artist_2.name: artist_2}
-artist_list = [artist_1, artist_1]
+artist_list = [artist_1, artist_2]
 nft_1 = Nft(artist_dict["Mr.D"], contract_address1, token_id1)
 nft_2 = Nft(artist_dict["Mr.M"], contract_address2, token_id2)
 nft_3 = Nft(artist_dict["Mr.M"], contract_address3, token_id3)
 nft_4 = Nft(artist_dict["Mr.D"], contract_address4, token_id4)
 
 product_list = []
-#for i in range(20):
-product_list.append(nft_1)
-product_list.append(nft_2)
-product_list.append(nft_3)
-product_list.append(nft_4)
+for i in range(20):
+    product_list.append(nft_1)
+    product_list.append(nft_2)
+    product_list.append(nft_3)
+    product_list.append(nft_4)
 
 
 def get_latest_pics(amount):
