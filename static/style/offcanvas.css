@@ -53,12 +53,15 @@
     height: 352px;
 }
 
+.modal-content-image {
+    width: 200%;
+    height: 200%;
+}
 
 .product-image.artist-detailed {
     width: 174px;
     height: 174px;
     margin: 25px;
-
 }
 
 .row {
@@ -78,6 +81,10 @@
     box-shadow: 7px 7px 6px #888888;
 }
 
+.modal-backdrop {
+    opacity: 0.95 !important;
+}
+
 .image-detailed  {
     box-shadow: 10px 10px 8px #888888;
     margin-top: 25px;
@@ -85,6 +92,7 @@
     margin-left: auto;
     margin-right: auto;
     max-height: 705px;
+    cursor: pointer;
 }
 
 .detailed-infoBox {

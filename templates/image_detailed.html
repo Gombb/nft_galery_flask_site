@@ -1,9 +1,14 @@
 {% extends "layout.html" %}
 {% block content %}
+    <div class="modal fade" id="image-detailed-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <img class="modal-content-image" alt="error" src="{{ product.img_link }}">
+        </div>
+    </div>
     <div class="container" id="detailed-container">
         <div class="row" id="detailed-row" style="align-content: center">
             <div class="col-sm-12 col-xl-8">
-                <img class="img-fluid image-detailed" alt="example" src={{ product.img_link }}>
+                <img class="img-fluid image-detailed" data-toggle="modal" data-target="#image-detailed-modal" alt="example" src={{ product.img_link }}>
             </div>
             <div class="col-sm-12 col-xl-4">
                 <div class="detailed-infoBox">

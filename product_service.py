@@ -33,7 +33,7 @@ class Nft:
         self.img_link = self.metadata["image_url"]
 
     def sleep(self):
-        time.sleep(10)
+        time.sleep(3)
 
     def query_metadata_from_opensea(self):
         url = "https://api.opensea.io/api/v1/asset/"
