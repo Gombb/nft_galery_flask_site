@@ -70,6 +70,10 @@ product_list.append(nft_3)
 product_list.append(nft_4)
 
 
+def get_latest_pics(amount):
+    return product_list[0:amount]
+
+
 def init_nft():
     pass
 

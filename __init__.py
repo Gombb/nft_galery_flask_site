@@ -5,7 +5,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def route_index():
-    return render_template("index.html")
+    last_five_image = product_service.get_latest_pics(3)
+    print(last_five_image[0].img_link)
+    return render_template("index.html", image_list=last_five_image)
 
 
 @app.route("/detailed/artist/<artist_id>")
@@ -18,6 +20,9 @@ def detailed_artist_view(artist_id):
 @app.route("/discover")
 def route_discover():
     product_list = product_service.get_product_list()
+    for product in product_list:
+        print("base price: " + str(product.base_price))
+        print("last price: " + str(product.last_price))
     return render_template("discover.html", product_list=product_list)
 
 
