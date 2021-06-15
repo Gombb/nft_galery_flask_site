@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- 
 import requests
+import time
 
 contract_address1 = "0x495f947276749Ce646f68AC8c248420045cb7b5e"
 token_id1 = "63150080862586220144499677713436387260670121981595781099876257943183637348353"
@@ -22,6 +23,7 @@ class Nft:
         self.contract_address = contract_address
         self.open_sea_token_id = open_sea_token_id
         self.metadata = self.query_metadata_from_opensea()
+        self.sleep = self.sleep()
         self.last_price = price_in_ether(self.metadata["orders"][-1]["current_price"])
         self.base_price = price_in_ether(self.metadata["orders"][0]["base_price"])
         self.id = self.metadata["id"]
@@ -29,6 +31,9 @@ class Nft:
         self.description = self.metadata["description"]
         self.artist = artist
         self.img_link = self.metadata["image_url"]
+
+    def sleep(self):
+        time.sleep(10)
 
     def query_metadata_from_opensea(self):
         url = "https://api.opensea.io/api/v1/asset/"
@@ -68,6 +73,10 @@ for i in range(20):
     product_list.append(nft_2)
     product_list.append(nft_3)
     product_list.append(nft_4)
+
+
+
+
 
 
 def get_latest_pics(amount):
