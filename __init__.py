@@ -6,7 +6,6 @@ app = Flask(__name__)
 @app.route('/')
 def route_index():
     last_five_image = product_service.get_latest_pics(3)
-    print(last_five_image[0].img_link)
     return render_template("index.html", image_list=last_five_image)
 
 
