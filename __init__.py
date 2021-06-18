@@ -18,7 +18,7 @@ def detailed_artist_view(artist_id):
 
 @app.route("/discover")
 def route_discover():
-    product_list = product_service.get_product_list()
+    product_list = product_service.get_all_products()
     return render_template("discover.html", product_list=product_list)
 
 
