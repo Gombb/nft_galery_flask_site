@@ -7,14 +7,14 @@
                      <div class="col-xl-3 col-sm-6 col-12">
                             <div class="collectible-card">
                                 <div class="image-thumbnail">
-                                    <a href={{ url_for("detailed_image_view", product_id=product.id )}}>
+                                    <a href={{ url_for("detailed_image_view", product_id=product.db_id )}}>
                                         <img class="img-fluid image-resize" src={{ product.img_link }} alt="thumbnail-img">
                                     </a>
                                 </div>
                                 <div class="collectible-card-infoContainer">
                                     <div class="row">
                                         <div class="col">
-                                            <a href={{ url_for("detailed_image_view", product_id=product.id )}}>
+                                            <a href={{ url_for("detailed_image_view", product_id=product.db_id )}}>
                                                 <span class="product-title-thumbnail">{{ product.title }}</span>
                                             </a>
                                         </div>

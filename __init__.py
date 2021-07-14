@@ -5,20 +5,25 @@ app = Flask(__name__)
 
 @app.route('/')
 def route_index():
-    last_five_image = product_service.get_latest_pics(3)
+    last_five_image = product_service.get_latest_products(3)
     return render_template("index.html", image_list=last_five_image)
+
+
+# @app.route('/test')
+# def route_test():
+#     print(product_service.get_artist_for_id(1))
 
 
 @app.route("/detailed/artist/<artist_id>")
 def detailed_artist_view(artist_id):
-    artist = product_service.get_artist(artist_id)
+    artist = product_service.get_artist_for_id(artist_id)
     product_list = product_service.get_products_for_artist_id(artist_id)
     return render_template("artist_detailed.html", artist=artist, product_list=product_list)
 
 
 @app.route("/discover")
 def route_discover():
-    product_list = product_service.get_all_products()
+    product_list = product_service.get_product_list()
     return render_template("discover.html", product_list=product_list)
 
 
