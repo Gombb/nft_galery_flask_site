@@ -3,11 +3,21 @@ import database_common
 
 
 @database_common.connection_handler
+def get_product_for_id(cursor, product_id):
+    cursor.execute(""" SELECT id, contract_address, token_id, artist_id
+                        FROM collectible
+                        WHERE id = %(product_id)s;
+                        """,
+                   {"product_id": product_id})
+    return cursor.fetchall()
+
+
+@database_common.connection_handler
 def get_artist_for_artist_id(cursor, artist_id):
-    cursor.execute(""" SELECT (name, bio, avatar_url)
+    cursor.execute(""" SELECT name, bio, avatar_url
                         FROM artist 
                         WHERE id = %(artist_id)s;""",
-                        {"artist_id", artist_id})
+                        {"artist_id": artist_id})
     return cursor.fetchall()
 
 
