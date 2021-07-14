@@ -46,7 +46,6 @@ def get_artist_list():
     if len(artist_cache) != 0:
         return artist_cache
     else:
-        artist_list = []
         query_result = persistence.get_all_artist()
         for artist in query_result:
             artist_cache.append(Artist(artist["id"], artist["name"], 420, artist["avatar_url"], artist["bio"]))
@@ -55,11 +54,10 @@ def get_artist_list():
 
 def get_artist_for_id(artist_id):
     if len(artist_cache) == 0:
-        return get_artist_list()
-    else:
-        for artist in artist_cache:
-            if artist.id == artist_id:
-                return artist
+        get_artist_list()
+    for artist in artist_cache:
+        if int(artist.id) == int(artist_id):
+            return artist
 
 
 def get_product_list():

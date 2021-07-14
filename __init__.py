@@ -18,6 +18,8 @@ def route_index():
 def detailed_artist_view(artist_id):
     artist = product_service.get_artist_for_id(artist_id)
     product_list = product_service.get_products_for_artist_id(artist_id)
+    print(artist)
+    print(product_list)
     return render_template("artist_detailed.html", artist=artist, product_list=product_list)
 
 
