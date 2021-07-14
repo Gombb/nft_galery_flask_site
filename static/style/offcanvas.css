@@ -23,6 +23,11 @@
     justify-content: center;
 }
 
+.navbar-nav > li{
+  padding-left:15px;
+  padding-right:15px;
+}
+
 
 #artist-name-detailed {
     margin-bottom: 50px;
@@ -32,6 +37,10 @@
 
 }
 
+.navbar-brand span {
+    font-size: 30px;
+    font-weight: bold;
+}
 
 #lastProductsCarousel {
     width: 750px;

@@ -6,32 +6,35 @@
         <title>BalkanCollectibles</title>
             <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-
-
-
         <link href="{{url_for('static', filename='style/offcanvas.css')}}" rel="stylesheet">
     {% endblock %}
 </head>
 <body>
     {% block navbar %}
         <nav class="navbar navbar-expand-sm navbar-light bg-light shadow-sm">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/discover">Discover</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Redeem</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="navbar-brand" href="#"><span>Balkan Collectible</span></div>
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/discover">Discover</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Redeem</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
         </nav>
     {% endblock %}
     {% block content %}
